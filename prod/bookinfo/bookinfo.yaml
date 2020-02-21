@@ -15,7 +15,7 @@ spec:
     path: prod/bookinfo/chart
   values:
     image:
-      repository: quay.io/jackzzj/bookinfo
+      repository: https://evry-ace.github.io/helm-charts/evry-ace/istio-bookinfo
     service:
       enabled: true
       type: ClusterIP
