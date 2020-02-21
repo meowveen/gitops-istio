@@ -1,0 +1,26 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: bookinfo
+  namespace: prod
+  annotations:
+    fluxcd.io/ignore: "true"
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: bookInfo
+  chart:
+    git: git@github.com:meowveen/gitops-istio
+    ref: master
+    path: prod/bookinfo/chart
+  values:
+    image:
+      repository: quay.io/jackzzj/bookinfo
+    service:
+      enabled: true
+      type: ClusterIP
+    ingress:
+      enabled: true
+      path: /
+      hosts:
+      - 10.106.68.214.nip.io
