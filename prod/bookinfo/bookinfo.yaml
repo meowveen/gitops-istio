@@ -19,8 +19,3 @@ spec:
     service:
       enabled: true
       type: ClusterIP
-    ingress:
-      enabled: true
-      path: /
-      hosts:
-      - 10.106.68.214.nip.io
