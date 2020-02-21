@@ -8,7 +8,7 @@ metadata:
     fluxcd.io/ignore: "false"
     fluxcd.io/automated: "true"
 spec:
-  releaseName: bookInfo
+  releaseName: bookinfo
   chart:
     git: git@github.com:meowveen/gitops-istio
     ref: master
