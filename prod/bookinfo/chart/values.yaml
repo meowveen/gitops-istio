@@ -5,8 +5,7 @@
 gateway:
   selector: 
     - istio: ingressgateway
-  hostname: 
-    - "*"
+  hostname: example.com
 
   httpsRedirect: false
 
