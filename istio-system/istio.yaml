@@ -73,7 +73,8 @@ spec:
     #addon kiali
     kiali:
       enabled: true
-      
+      createDemoSecret: true
+
     # common settings
     global:
       # sidecar settings
