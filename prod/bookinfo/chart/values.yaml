@@ -4,7 +4,7 @@
 
 gateway:
   selector: ingressgateway
-  hostname: example.com
+  hostname: bookinfo.melvin
 
   httpsRedirect: false
 
