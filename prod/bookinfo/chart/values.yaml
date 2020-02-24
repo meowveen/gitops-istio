@@ -4,7 +4,7 @@
 
 gateway:
   selector: ingressgateway
-  hostname: 10.100.48.136
+  hostname: "*"
 
   httpsRedirect: false
 
