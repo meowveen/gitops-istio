@@ -3,8 +3,7 @@
 # Declare variables to be passed into your templates.
 
 gateway:
-  selector: 
-    - istio: ingressgateway
+  selector: ingressgateway
   hostname: example.com
 
   httpsRedirect: false
